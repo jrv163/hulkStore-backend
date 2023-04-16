@@ -6,6 +6,10 @@ const ProductoSchema = Schema({
         type: String,
         required: true,
     },
+    image:{
+        type: String,
+        require: true
+    },
     price: {
         type: Number,
         required: true 

@@ -20,6 +20,7 @@ router.post(
     '/', 
     [
         check('title', 'El titulo es obligatorio').not().isEmpty(),
+        check('image', 'La imagen es obligatoria').not().isEmpty(),
         check('price', 'El precio es obligatorio y debe ser un numero').not().isEmpty().isNumeric(),
         check('cantidad', 'la cantidad es obligatorio y debe ser un numero').not().isEmpty().isNumeric(),
         check('id', 'El id es obligatorio y debe ser un numero').not().isEmpty().isNumeric(),
